@@ -64,7 +64,8 @@ if(isset($_POST['formsubmit'])){
                         <p> <input type="number" name="number" onBlur="validphone()" id="number" placeholder="Enter Number"></p>
                         <span id="user-status1" style="font-size:10px; "></span></p>
                         <p><input type="password" name="password" placeholder="Enter password"></p>
-                     <p><span style="" id="captcha"> </span><i style="cursor:pointer; " class="fa fa-refresh" onClick='makeid(5)' aria-hidden="true"></i>  <input type="text" id="captachacode" onBlur="checkcode()" style="height: 38px;width: 74%;margin-left: 9px; font-size: 16px;" placeholder="captch Text" required></p>
+                     <p><span style="" id="captcha"> </span><i style="cursor:pointer; " class="fa fa-refresh" onClick='makeid(5)' aria-hidden="true"></i> 
+                      <input type="text" id="captachacode" onBlur="checkcode()" style="height: 38px;width: 74%;margin-left: 9px; font-size: 16px;" placeholder="captch Text" required></p>
                     </div>
                     <div style="overflow:auto;">
                         <div>
@@ -98,15 +99,10 @@ if(isset($_POST['formsubmit'])){
  var usercode = document.getElementById('captachacode').value;
  if(usercode != code){
      document.getElementById("nextBtn").disabled = true;
-     document.getElementById("captachacode").style.border = "4px solid red";
-     console.log("huyg")
-     console.log(usercode)
-     console.log(code)
- 
+     document.getElementById("captachacode").style.border = "4px solid red"; 
  }else{
      document.getElementById("nextBtn").disabled = false;
      document.getElementById("captachacode").style.border = "2px solid blue";
-     console.log("tarun")
  }}
 </script>
 </html>

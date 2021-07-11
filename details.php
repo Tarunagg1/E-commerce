@@ -11,6 +11,7 @@ if(isset($_GET['pid'])){
     $pname = $arr['product_name'];
 }
 ?>
+
 <div id="content">
     <div class="container-fluid">
         <div class="col-md-12 mt-3">
